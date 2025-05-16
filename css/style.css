@@ -490,6 +490,92 @@ nav {
     text-align: center;
 } */
 
+.education-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.education-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .education-card-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.degree-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.school-name {
+    font-size: 1.25rem;
+    color: #4f46e5;
+}
+
+.education-date-wrapper {
+    margin-top: 0.5rem;
+}
+
+.education-date {
+    padding: 0.5rem 1rem;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.education-description {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.education-tag {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
@@ -629,6 +715,8 @@ textarea.form-input {
     width: 100%;
 }
 
+
+
 /* Footer */
 footer {
     background-color: #1f2937;
@@ -717,7 +805,6 @@ footer {
     .about-info {
         text-align: left;
     }
-    
     .contact-content {
         flex-direction: column;
     }
