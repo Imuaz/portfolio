@@ -155,6 +155,23 @@ nav {
     color: #6366f1;
 }
 
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #6366f1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active-nav::after {
+  width: 100%;
+}
+
+
 .nav-links a::after {
     content: '';
     position: absolute;
