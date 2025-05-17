@@ -10,291 +10,447 @@
         <link rel="stylesheet" href="./css/style.css">
         <title>IMY | Portfolio</title>
         <!-- Ensure script loads after DOM is parsed -->
-        <script src="./index.js" defer></script>
     </head>
 <body>
-    <div id="header"></div>
-    <section class="hero" id="home">
+    <header id="header" class="header-class">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-name">Hi, I'm <span>Muazu Yakub Idris</span></h1>
-                    <h2 class="hero-job">Full Stack software engineer</h2>
-                    <p class="hero-desc">
-                        I build websites and applications from start to finish, focusing on writing clean code and creating good user experiences. I enjoy learning new technologies and solving problems with practical solutions.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="#projects" class="btn btn-outline">View Projects</a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><img src="./images/github.svg" alt="github"></a>
-                        <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
-                        <a href="#"><img src="./images/twitter-x.svg" alt="twitter-x"></a>
-                        <a href="#"><img src="./images/dribbble.svg" alt="dribbble"></a>
-                    </div>
-                </div>
-                
-                <div class="hero-image">
-                    <div class="profile-img">
-                        <div class="profile-img-frame">
-                            <img src="./images/my_image.jpg" alt="profile image" class="profile-image">
-                        </div>
-                    </div>
-                    <div class="profile-badge">10+</div>
-                    <div class="profile-label">Engineer</div>
-                </div>
+            <nav>
+                <a href="#" class="logo">IMY<span>.</span></a>
+
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="javascript:showPage('education')" class="nav-link education">Education</a></li>
+                    <li><a href="javascript:showPage('experience')" class="nav-link experience">Experience</a></li>
+                    <li><a href="javascript:showPage('skills')" class="nav-link skill">Skills</a></li>
+                </ul>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu (only visible on small screens) -->
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-container">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:showPage('education')">Education</a>
+                <a href="javascript:showPage('experience')">Experience</a>
+                <a href="javascript:showPage('skills')">Skills</a>
             </div>
         </div>
-    </section>
+    </header>
     <div id="main-content">
-    <section class="about" id="about">
+        <section class="hero" id="home">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="accent-line"></div>
-                
-                <div class="about-content">
-                    <div class="about-image">
-                    <div class="about-img-container">
-                        <div class="about-img-placeholder">
-                            <i class="fas fa-user"></i>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-name">Hi, I'm <span>Muazu Yakub Idris</span></h1>
+                        <h2 class="hero-job">Full Stack software engineer</h2>
+                        <p class="hero-desc">
+                            I build websites and applications from start to finish, focusing on writing clean code and creating good user experiences. I enjoy learning new technologies and solving problems with practical solutions.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                            <a href="#projects" class="btn btn-outline">View Projects</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><img src="./images/github.svg" alt="github"></a>
+                            <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
+                            <a href="#"><img src="./images/twitter-x.svg" alt="twitter-x"></a>
+                            <a href="#"><img src="./images/dribbble.svg" alt="dribbble"></a>
                         </div>
                     </div>
-                    <div class="about-shape-1"></div>
-                    <div class="about-shape-2"></div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-img">
+                            <div class="profile-img-frame">
+                                <img src="./images/my_image.jpg" alt="profile image" class="profile-image">
+                            </div>
+                        </div>
+                        <div class="profile-badge">10+</div>
+                        <div class="profile-label">Engineer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="accent-line"></div>
+                    
+                    <div class="about-content">
+                        <div class="about-image">
+                        <div class="about-img-container">
+                            <div class="about-img-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="about-shape-1"></div>
+                        <div class="about-shape-2"></div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h3 class="about-title">Who am I?</h3>
+                        <p class="about-desc">
+                            I am a Full Stack Software Engineer with a strong passion for academic research, technological innovation, and continuous growth. I take a disciplined and hardworking approach to building high-quality digital solutions that drive organizational success.
+                        </p>
+                        <p class="about-desc">
+                            My expertise includes developing web applications using modern frameworks such as React and Node.js. I am committed to writing clean, maintainable code and designing scalable, user-friendly systems. I actively seek opportunities to learn new technologies and improve my skills.
+                        </p>
+                        <p class="about-desc">
+                            Outside of work, I value collaboration, continuous learning, and innovation. I enjoy working in team environments, sharing ideas, and exploring new concepts that inspire both personal and professional development.
+                        </p>
+                        
+                        <div class="about-info">
+                            <div class="info-item">
+                                <h4>Name:</h4>
+                                <p>Muazu Y. Idris</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Email:</h4>
+                                <p>imuazyakub@gmail.com</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Location:</h4>
+                                <p>Bauchi State, NG</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Availability:</h4>
+                                <p>Freelance &amp; Full-time</p>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">
+                            Download Resume <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="accent-line"></div>
+                <p class="section-subtitle">
+                    Here are some of my recent projects that showcase my skills and expertise in web development.
+                </p>
+                
+                <div class="projects-grid">
+                    Project 1
+                    <div class="card project-card">
+                        <div class="project-img">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-desc">
+                                A full-featured online store with product catalog, shopping cart, and secure checkout process.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="github-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    Project 2
+                    <div class="card project-card">
+                        <div class="project-img">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-desc">
+                                A productivity app that helps users organize tasks, set priorities, and track progress.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="github-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    Project 3
+                    <div class="card project-card">
+                        <div class="project-img">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Chat Application</h3>
+                            <p class="project-desc">
+                                Real-time messaging platform with features like group chats, file sharing, and notifications.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    View Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="github-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="about-text">
-                    <h3 class="about-title">Who am I?</h3>
-                    <p class="about-desc">
-                        I am a Full Stack Software Engineer with a strong passion for academic research, technological innovation, and continuous growth. I take a disciplined and hardworking approach to building high-quality digital solutions that drive organizational success.
-                    </p>
-                    <p class="about-desc">
-                        My expertise includes developing web applications using modern frameworks such as React and Node.js. I am committed to writing clean, maintainable code and designing scalable, user-friendly systems. I actively seek opportunities to learn new technologies and improve my skills.
-                    </p>
-                    <p class="about-desc">
-                        Outside of work, I value collaboration, continuous learning, and innovation. I enjoy working in team environments, sharing ideas, and exploring new concepts that inspire both personal and professional development.
-                    </p>
-                    
-                    <div class="about-info">
-                        <div class="info-item">
-                            <h4>Name:</h4>
-                            <p>Muazu Y. Idris</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Email:</h4>
-                            <p>imuazyakub@gmail.com</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Location:</h4>
-                            <p>Bauchi State, NG</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Availability:</h4>
-                            <p>Freelance &amp; Full-time</p>
-                        </div>
-                    </div>
-                    
+                <div class="view-all">
                     <a href="#" class="btn btn-primary">
-                        Download Resume <i class="fas fa-download ml-2"></i>
+                        View All Projects <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="accent-line"></div>
-            <p class="section-subtitle">
-                Here are some of my recent projects that showcase my skills and expertise in web development.
-            </p>
-            
-            <div class="projects-grid">
-                Project 1
-                <div class="card project-card">
-                    <div class="project-img">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-commerce Platform</h3>
-                        <p class="project-desc">
-                            A full-featured online store with product catalog, shopping cart, and secure checkout process.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#" class="github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </section> -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="accent-line"></div>
+                <p class="section-subtitle">
+                    Have a project in mind or want to collaborate? Feel free to reach out to me using the form below.
+                </p>
                 
-                Project 2
-                <div class="card project-card">
-                    <div class="project-img">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-desc">
-                            A productivity app that helps users organize tasks, set priorities, and track progress.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#" class="github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                Project 3
-                <div class="card project-card">
-                    <div class="project-img">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Chat Application</h3>
-                        <p class="project-desc">
-                            Real-time messaging platform with features like group chats, file sharing, and notifications.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Socket.io</span>
-                            <span class="tag">Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#" class="github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="view-all">
-                <a href="#" class="btn btn-primary">
-                    View All Projects <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section> -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="accent-line"></div>
-            <p class="section-subtitle">
-                Have a project in mind or want to collaborate? Feel free to reach out to me using the form below.
-            </p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="card contact-card">
-                        <h3 class="contact-card-title">Contact Information</h3>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="card contact-card">
+                            <h3 class="contact-card-title">Contact Information</h3>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="contact-label">Email</h4>
+                                        <p class="contact-value">imuazyakub@gmail.com</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="contact-label">Email</h4>
-                                    <p class="contact-value">imuazyakub@gmail.com</p>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="contact-label">Phone</h4>
+                                        <p class="contact-value">+234 (0)813 399 6633</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="contact-label">Location</h4>
+                                        <p class="contact-value">Bauchi city, Nigeria</p>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
+                            <div class="contact-social">
+                                <h4>Follow Me</h4>
+                                <div class="contact-social-icons">
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
                                 </div>
-                                <div>
-                                    <h4 class="contact-label">Phone</h4>
-                                    <p class="contact-value">+234 (0)813 399 6633</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 class="contact-label">Location</h4>
-                                    <p class="contact-value">Bauchi city, Nigeria</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-social">
-                            <h4>Follow Me</h4>
-                            <div class="contact-social-icons">
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form class="card contact-card">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-input" placeholder="Your name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-input" placeholder="Your email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" class="form-input" placeholder="Subject">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" class="form-input" placeholder="Your message"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary form-submit">
-                            Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                    
+                    <div class="contact-form" id="contact-form">
+                        <form class="card contact-card">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="Your email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" class="form-input" placeholder="Subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-input" placeholder="Your message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
-    
-    <div id="footer"></div>
+    <div id="education-page" class="page-transition">
+        <div class="education-container">
+            <div class="education-header">
+                <h2 class="education-title">Professional Development</h2>
+                <button onclick="showPage('main')" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </button>
+            </div>
+
+            <div class="education-card">
+                <div class="education-card-header">
+                    <div>
+                        <h3 class="degree-title">Ongoing Certifications</h3>
+                        <p class="school-name">Various Online Platforms</p>
+                    </div>
+                    <div class="education-date-wrapper">
+                        <span class="education-date">Ongoing</span>
+                    </div>
+                </div>
+                <p class="education-description">
+                    Continually upgrading skills in software engineering and AI through structured online courses and certifications.
+                </p>
+                <div class="education-tags">
+                    <span class="education-tag">FreeCodeCamp</span>
+                    <span class="education-tag">Udemy</span>
+                    <span class="education-tag">AI Starter Kit</span>
+                    <span class="education-tag">Web Development</span>
+                    <span class="education-tag">Software Engineering</span>
+                </div>
+            </div>
+
+            <!-- Formal Education Section -->
+            <div class="education-header">
+                <h2 class="education-title">Formal Education</h2>
+            </div>
+
+            <div class="education-card">
+                <div class="education-card-header">
+                    <div>
+                        <h3 class="degree-title">B.Eng. Computer & Communication Engineering</h3>
+                        <p class="school-name">Abubakar Tafawa Balewa University, Bauchi</p>
+                    </div>
+                    <div>
+                        <span class="education-date">2016 - 2021</span>
+                    </div>
+                </div>
+                <p class="education-description">
+                    Specialized in Computer Engineering, Artificial Intelligence and Machine Learning.
+                </p>
+                <div class="education-tags">
+                    <span class="education-tag">Machine Learning</span>
+                    <span class="education-tag">AI</span>
+                    <span class="education-tag">System Design</span>
+                    <span class="education-tag">Neural Networks</span>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="education-card">
+                <div class="education-card-header">
+                    <div>
+                        <h3 class="degree-title">Diploma in Computer Operations</h3>
+                        <p class="school-name">Professor Iya Abubakar Community Resource Centre</p>
+                    </div>
+                    <div>
+                        <span class="education-date">2019</span>
+                    </div>
+                </div>
+                <p class="education-description">
+                    Basic Computer Operations.
+                </p>
+                <div class="education-tags">
+                    <span class="education-tag">Microsoft Windows XP</span>
+                    <span class="education-tag">Microsoft Office XP</span>
+                    <span class="education-tag">Internet Explorer</span>
+                </div>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="education-card">
+                <div class="education-card-header">
+                    <div>
+                        <h3 class="degree-title">Senior Secondary School Certificate</h3>
+                        <p class="school-name">G.C.D.S.S Bauchi</p>
+                    </div>
+                    <div>
+                        <span class="education-date">2008 - 2014</span>
+                    </div>
+                </div>
+                <p class="education-description">
+                    Basic Sciences.
+                </p>
+                <div class="education-tags">
+                    <span class="education-tag">English Language</span>
+                    <span class="education-tag">Biology</span>
+                    <span class="education-tag">Chemistry</span>
+                    <span class="education-tag">Physics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="experience-page" class="experience-page"></div>
+    <div id="skills-page" class="skills-page"></div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+            <div>
+                <div class="footer-logo">Muazu Y<span>.</span> Idris</div>
+                <p class="footer-tagline">Full Stack Software Engineer</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fab fa-dribbble fa-lg"></i></a>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; Muazu Y. Idris. All rights reserved.
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js" defer></script>
 </body>
 </html>
 
